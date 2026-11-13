@@ -1,0 +1,20 @@
+﻿# Secretos
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Cachés generados (grafo descomprimido, pickle, índice RAG)
+data/cache/
+
+# Material del curso y copias de trabajo que no se suben
+docs/EAFIT_Proyecto_Final_IA.pdf
+docs/data_and_context/data/
+docs/data_and_context/corpus_rag/
+docs/data_and_context/*.png
+docs/data_and_context/*.pdf
+docs/data_and_context/*.csv
+docs/data_and_context/requirements.txt

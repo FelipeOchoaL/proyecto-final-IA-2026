@@ -1,0 +1,19 @@
+# Probado con Python 3.11
+# Grafo: osmnx/networkx solo cargan el GraphML (la búsqueda A*/Dijkstra/BFS es propia)
+osmnx==2.1.1
+networkx==3.6.1
+pandas==2.3.3
+numpy==2.4.6
+matplotlib==3.11.2
+# RAG
+faiss-cpu==1.15.1
+sentence-transformers==5.4.1
+# Agente (endpoint compatible con OpenAI: Groq)
+openai==3.41.0
+python-dotenv==1.1.1
+# Dashboard
+streamlit==1.56.0
+streamlit-folium==0.27.4
+folium==0.20.0
+# Tablas markdown en la evaluación
+tabulate==0.10.0

@@ -1,0 +1,9 @@
+modo,factor,unidad,tipo_de_dato,fuente_y_notas,confianza
+carro_particular,0.1097,kgCO2e/pasajero-km,DERIVADO,"0,1645 kgCO2e/vehículo-km (carro de gasolina promedio, UK GHG Conversion Factors 2024, visto vía Climatiq) / 1,5 ocupantes. La ocupación 1,5 es SUPUESTO del equipo (no hay dato colombiano verificado).",baja
+bus,0.03174,kgCO2e/pasajero-km,CITADO,"Bus local fuera de Londres, UK GHG Conversion Factors 2024 (vía Climatiq, espejo no oficial).",media
+metroplus,0.03174,kgCO2e/pasajero-km,ANALOGIA,Se asigna el factor de bus local; Metroplús es BRT (puede diferir).,baja
+metro,0.0278,kgCO2e/pasajero-km,ANALOGIA,"Metro de Londres, UK GHG Conversion Factors 2024 (vía Climatiq). El Metro de Medellín es eléctrico con otro mix de generación; el valor real es distinto.",baja
+tranvia,0.0278,kgCO2e/pasajero-km,ANALOGIA,Sin factor encontrado para tranvía; se usa el del metro.,baja
+metrocable,0.0278,kgCO2e/pasajero-km,ANALOGIA,Sin factor encontrado para cable aéreo; se usa el del metro (también eléctrico).,baja
+bicicleta,0.0,kgCO2e/pasajero-km,SUPUESTO,Emisión operativa nula; no incluye ciclo de vida.,alta
+caminata,0.0,kgCO2e/pasajero-km,SUPUESTO,Emisión operativa nula.,alta
