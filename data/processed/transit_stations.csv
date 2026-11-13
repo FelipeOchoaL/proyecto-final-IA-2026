@@ -1,0 +1,53 @@
+mode,name,lat,lon,lines
+metro,Acevedo,6.299898,-75.5585365,A
+metro,Aguacatala,6.1938268,-75.581824,A
+metro,Alpujarra,6.2429388,-75.5713859,A
+metro,Ayurá,6.1860311,-75.5861844,A
+metro,Bello,6.330022,-75.553657,A
+metro,Caribe,6.2783259,-75.5693832,A
+metro,Cisneros,6.2490691,-75.5751557,B
+metro,Envigado,6.1746713,-75.5970174,A
+metro,Estadio,6.2533469,-75.5882332,B
+metro,Exposiciones,6.2385047,-75.57311,A
+metro,Floresta,6.2587239,-75.5977499,B
+metro,Hospital,6.26393,-75.5633284,A
+metro,Industriales,6.2300218,-75.5756148,A
+metro,Itagüí,6.1629236,-75.6067027,A
+metro,La Estrella,6.1526286,-75.6264256,A
+metro,Madera,6.3159461,-75.5553044,A
+metro,Niquía,6.3378365,-75.5442559,A
+metro,Parque Berrío,6.250541,-75.5681892,A
+metro,Poblado,6.2119524,-75.5781115,A
+metro,Prado,6.2568618,-75.5661367,A
+metro,Sabaneta,6.1577868,-75.6160367,A
+metro,San Antonio,6.2470367,-75.569742,A|B
+metro,San Javier,6.2570741,-75.6139847,B
+metro,Santa Lucía,6.2580422,-75.6038204,B
+metro,Suramericana,6.2530008,-75.5829968,B
+metro,Tricentenario,6.290346,-75.5646204,A
+metro,Universidad,6.2694225,-75.5657975,A
+metrocable,Acevedo,6.3003222,-75.5584139,K
+metrocable,Andalucía,6.29633,-75.5518614,K
+metrocable,Arví,6.2815038,-75.5029613,L
+metrocable,El Pinal,6.2453065,-75.5444764,M
+metrocable,Juan XXIII,6.2656475,-75.613643,J
+metrocable,La Aurora,6.2811306,-75.614184,J
+metrocable,Las Torres,6.2366712,-75.5364043,H
+metrocable,Miraflores,6.2417154,-75.5490617,M
+metrocable,Oriente,6.2333442,-75.5399711,H
+metrocable,Popular,6.2951611,-75.5481161,K
+metrocable,San Javier,6.2567477,-75.6134249,J
+metrocable,Santo Domingo,6.2931308,-75.5416171,K|L
+metrocable,Trece de Noviembre,6.2476011,-75.5414455,M
+metrocable,Vallejuelos,6.275338,-75.6139704,J
+metrocable,Villa Sierra,6.2348915,-75.5287375,H
+metroplus,Barrio Colombia,6.2287163,-75.569822,2
+metroplus,Palos Verdes,6.2632506,-75.5564143,2
+tranvia,Alejandro Echavarría,6.2354878,-75.5417461,T-A
+tranvia,Bicentenario,6.2439434,-75.5587632,T-A
+tranvia,Buenos Aires,6.2413979,-75.5538894,T-A
+tranvia,Loyola,6.2390212,-75.5451812,T-A
+tranvia,Oriente,6.2332831,-75.5403312,T-A
+tranvia,Pabellón del Agua,6.2455831,-75.5619993,T-A
+tranvia,San Antonio,6.247035,-75.5691478,T-A
+tranvia,San José,6.2473237,-75.5653947,T-A

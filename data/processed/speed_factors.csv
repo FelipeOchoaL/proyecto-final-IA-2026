@@ -1,0 +1,4 @@
+periodo,factor_velocidad,velocidad_media_km_h,fuente
+libre,1.0,47.0,Velocidades del grafo sin congestión (OSM por tipo de vía)
+promedio_dia,0.44,20.7,"TomTom Traffic Index 2025 Medellín, promedio del día"
+hora_pico,0.338,15.9,"TomTom Traffic Index 2025 Medellín, hora pico"

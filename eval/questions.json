@@ -1,0 +1,15 @@
+[
+  {"id": 1, "pregunta": "¿Cuánto cuesta un viaje en el Metro con la tarjeta Cívica personalizada en 2026?", "herramientas_esperadas": ["search_docs"], "requiere_cita_doc": true},
+  {"id": 2, "pregunta": "¿Qué dígitos de placa tienen pico y placa los martes en Medellín y en qué horario?", "herramientas_esperadas": ["search_docs"], "requiere_cita_doc": true},
+  {"id": 3, "pregunta": "¿Puedo llevar a mi perro en el Metro? ¿Qué condiciones hay?", "herramientas_esperadas": ["search_docs"], "requiere_cita_doc": true},
+  {"id": 4, "pregunta": "¿Puedo subir una bicicleta no plegable al Tranvía de Ayacucho?", "herramientas_esperadas": ["search_docs"], "requiere_cita_doc": true},
+  {"id": 5, "pregunta": "¿Cuánto tiempo dura la ventana de integración tarifaria entre Metro y bus?", "herramientas_esperadas": ["search_docs"], "requiere_cita_doc": true},
+  {"id": 6, "pregunta": "¿A qué hora va más lleno el Metro en la Línea A en días hábiles?", "herramientas_esperadas": ["search_docs"], "requiere_cita_doc": true},
+  {"id": 7, "pregunta": "¿Cuál es la ruta más rápida en transporte público de San Javier a Oriente a las 8 a. m.?", "herramientas_esperadas": ["plan_route"], "requiere_cita_doc": false},
+  {"id": 8, "pregunta": "Compara carro, transporte público, bicicleta y caminata de Niquía a Poblado a las 6 p. m.", "herramientas_esperadas": ["plan_route"], "requiere_cita_doc": false},
+  {"id": 9, "pregunta": "Quiero contaminar lo menos posible: ¿cómo voy de Bello a Envigado a las 10 a. m.?", "herramientas_esperadas": ["plan_route"], "requiere_cita_doc": false},
+  {"id": 10, "pregunta": "Mi placa termina en 6 y es jueves. ¿Puedo ir en carro de Acevedo a Poblado a las 7 a. m.? Si no, ¿qué alternativa me conviene?", "herramientas_esperadas": ["search_docs", "plan_route"], "requiere_cita_doc": true},
+  {"id": 11, "pregunta": "¿Cuánto me cuesta ir de Estadio a Itagüí en Metro y cuánto en carro a las 5 p. m.? ¿Cuál es la tarifa oficial del pasaje?", "herramientas_esperadas": ["search_docs", "plan_route"], "requiere_cita_doc": true},
+  {"id": 12, "pregunta": "Voy de San Javier a Oriente con mi bicicleta de marco rígido, ¿puedo hacer todo el trayecto en Metro y Tranvía con ella? ¿Cuál es la ruta?", "herramientas_esperadas": ["search_docs", "plan_route"], "requiere_cita_doc": true},
+  {"id": 13, "pregunta": "¿Cómo llego de Narnia a Poblado en Metro?", "herramientas_esperadas": ["plan_route"], "requiere_cita_doc": false}
+]

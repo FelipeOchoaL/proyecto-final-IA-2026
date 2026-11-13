@@ -1,0 +1,14 @@
+{
+  "municipios": [
+    "Medellín",
+    "Bello",
+    "Itagüí",
+    "Envigado",
+    "Sabaneta",
+    "La Estrella"
+  ],
+  "nodos": 43507,
+  "aristas": 95511,
+  "longitud_total_km": 8951.9,
+  "fuente": "OpenStreetMap vía Overpass API (ODbL)"
+}

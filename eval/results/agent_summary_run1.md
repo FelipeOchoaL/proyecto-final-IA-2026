@@ -1,0 +1,77 @@
+# Evaluación del agente
+
+13 preguntas fijas (`eval/questions.json`), modelo según `.env`, T_max = 6.
+
+- Herramienta correcta: **12/13** (92 %)
+- Citó la fuente: **10/13** (77 %)
+- Preguntas con error del LLM/API: 2
+
+|   id | pregunta                                                                                                                                   | esperadas              | llamadas               | herramienta_correcta   | cito_fuente   |   errores_herramienta |   iteraciones | error_llm                                                                                                                                                                                                                                                                                                                              |   segundos |
+|-----:|:-------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------|:-----------------------|:-----------------------|:--------------|----------------------:|--------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------:|
+|    1 | ¿Cuánto cuesta un viaje en el Metro con la tarjeta Cívica personalizada en 2026?                                                           | search_docs            | search_docs            | True                   | True          |                     0 |             2 |                                                                                                                                                                                                                                                                                                                                        |       69.9 |
+|    2 | ¿Qué dígitos de placa tienen pico y placa los martes en Medellín y en qué horario?                                                         | search_docs            | search_docs            | True                   | True          |                     0 |             2 |                                                                                                                                                                                                                                                                                                                                        |        1.8 |
+|    3 | ¿Puedo llevar a mi perro en el Metro? ¿Qué condiciones hay?                                                                                | search_docs            | search_docs            | True                   | True          |                     0 |             2 |                                                                                                                                                                                                                                                                                                                                        |        2.6 |
+|    4 | ¿Puedo subir una bicicleta no plegable al Tranvía de Ayacucho?                                                                             | search_docs            | search_docs            | True                   | False         |                     0 |             2 | Connection error.                                                                                                                                                                                                                                                                                                                      |       51.9 |
+|    5 | ¿Cuánto tiempo dura la ventana de integración tarifaria entre Metro y bus?                                                                 | search_docs            | search_docs            | True                   | True          |                     0 |             2 |                                                                                                                                                                                                                                                                                                                                        |        1.8 |
+|    6 | ¿A qué hora va más lleno el Metro en la Línea A en días hábiles?                                                                           | search_docs            | search_docs            | True                   | True          |                     0 |             2 |                                                                                                                                                                                                                                                                                                                                        |        1.9 |
+|    7 | ¿Cuál es la ruta más rápida en transporte público de San Javier a Oriente a las 8 a. m.?                                                   | plan_route             | plan_route             | True                   | True          |                     0 |             2 |                                                                                                                                                                                                                                                                                                                                        |        2.6 |
+|    8 | Compara carro, transporte público, bicicleta y caminata de Niquía a Poblado a las 6 p. m.                                                  | plan_route             | plan_route+search_docs | True                   | True          |                     0 |             3 |                                                                                                                                                                                                                                                                                                                                        |       17   |
+|    9 | Quiero contaminar lo menos posible: ¿cómo voy de Bello a Envigado a las 10 a. m.?                                                          | plan_route             | plan_route             | True                   | True          |                     0 |             2 |                                                                                                                                                                                                                                                                                                                                        |       18.6 |
+|   10 | Mi placa termina en 6 y es jueves. ¿Puedo ir en carro de Acevedo a Poblado a las 7 a. m.? Si no, ¿qué alternativa me conviene?             | search_docs+plan_route | search_docs+plan_route | True                   | True          |                     0 |             3 |                                                                                                                                                                                                                                                                                                                                        |       38.9 |
+|   11 | ¿Cuánto me cuesta ir de Estadio a Itagüí en Metro y cuánto en carro a las 5 p. m.? ¿Cuál es la tarifa oficial del pasaje?                  | search_docs+plan_route | plan_route             | False                  | False         |                     0 |             2 | Error code: 429 - Rate limit reached for model `openai/gpt-oss-120b`, Used 6126, Requested 2052. Please try again in 1.335s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing |       11.5 |
+|   12 | Voy de San Javier a Oriente con mi bicicleta de marco rígido, ¿puedo hacer todo el trayecto en Metro y Tranvía con ella? ¿Cuál es la ruta? | search_docs+plan_route | search_docs+plan_route | True                   | True          |                     0 |             3 |                                                                                                                                                                                                                                                                                                                                        |       29.3 |
+|   13 | ¿Cómo llego de Narnia a Poblado en Metro?                                                                                                  | plan_route             | plan_route             | True                   | False         |                     1 |             2 |                                                                                                                                                                                                                                                                                                                                        |       10.5 |
+
+## Respuestas (primeros 400 caracteres)
+
+**1. ¿Cuánto cuesta un viaje en el Metro con la tarjeta Cívica personalizada en 2026?**
+
+> En 2026 la tarifa para un viaje en el Metro usando la **Tarjeta Cívica personalizada (perfil frecuente)** es de **$3 820 COP** por trayecto.    Fuentes: [02_tarifas_metro_sitva_2026.md](https://www.publimetro.co/noticias/2026/01/09/asi-quedaron-las-tarifas-de-transporte-publico-en-medellin-pasaje-del-metro-subio-a-3820-pesos/)  _Aviso: estimaciones orientativas con datos abiertos y supuestos; no e
+
+**2. ¿Qué dígitos de placa tienen pico y placa los martes en Medellín y en qué horario?**
+
+> Los martes el pico y placa en Medellín aplica a los vehículos con los **dígitos 1 y 4** de la placa.    El horario de restricción es de **5:00 a.m. a 8:00 p.m.** de lunes a viernes[01_pico_y_placa_medellin_2026-2.md](https://www.medellin.gov.co/es/sala-de-prensa/noticias/la-nueva-rotacion-del-pico-y-placa-en-medellin-comenzara-a-regir-a-partir-del-lunes-3-de-agosto/).    Fuentes:   - Rotación por 
+
+**3. ¿Puedo llevar a mi perro en el Metro? ¿Qué condiciones hay?**
+
+> Sí, puedes llevar a tu perro en el Metro de Medellín, pero solo bajo ciertas condiciones:  - **Tipo de mascota**: solo animales de compañía pequeños o medianos (perros, gatos, conejos, hámster, aves no silvestres, peces ornamentales).   - **Contenedor**: debe ir en un guacal o contenedor sólido de máximo 60 cm por lado. Cada persona puede llevar una mascota y un contenedor.   - **Horario permitido
+
+**4. ¿Puedo subir una bicicleta no plegable al Tranvía de Ayacucho?**
+
+> No pude contactar al modelo de lenguaje (APIConnectionError). Intente de nuevo en unos segundos; el mapa y la tabla siguen funcionando.
+
+**5. ¿Cuánto tiempo dura la ventana de integración tarifaria entre Metro y bus?**
+
+> No dispongo del dato exacto sobre la duración de la ventana de integración tarifaria entre el Metro y los buses. Te recomiendo consultar la información oficial en la página del Metro de Medellín o en la Alcaldía de Medellín.  Fuentes: [02_tarifas_metro_sitva_2026.md](https://www.publimetro.co/noticias/2026/01/09/asi-quedaron-las-tarifas-de-transporte-publico-en-medellin-pasaje-del-metro-subio-a-38
+
+**6. ¿A qué hora va más lleno el Metro en la Línea A en días hábiles?**
+
+> En días hábiles (lunes a viernes) la **Línea A** del Metro de Medellín tiene su mayor afluencia a las **17:00 h**, con un promedio de **71 816 pasajeros** en esa franja horaria. Las tres horas con mayor carga son 17:00, 16:00 y 6:00.  Fuentes: [07_afluencia_metro_2026.md](https://datosabiertos-metrodemedellin.opendata.arcgis.com/)  _Aviso: estimaciones orientativas con datos abiertos y supuestos; 
+
+**7. ¿Cuál es la ruta más rápida en transporte público de San Javier a Oriente a las 8 a. m.?**
+
+> **Ruta más rápida (transporte público) – San Javier → Oriente (08:00 h)**    | Parámetro | Valor | |-----------|-------| | **Tiempo total** | **≈ 31.8 min** | | **Costo** | **≈ 7 640 COP** | | **Emisiones** | **≈ 0.25 kg CO₂e** | | **Periodo** | hora pico |  **Itinerario**   1. **Caminata** ≈ 1.8 min (desde la entrada de la estación).   2. **Metro línea B** San Javier → San Antonio ≈ 8.5 min.   3.
+
+**8. Compara carro, transporte público, bicicleta y caminata de Niquía a Poblado a las 6 p. m.**
+
+> **Comparación de Niquía → Poblado (salida 18:00 h)**    | Modo | Tiempo estimado* | Costo (COP) | Emisiones (kg CO₂e) | Observaciones | |------|------------------|-------------|----------------------|----------------| | **Carro** | 34,7 min | 6 269 COP | 1,694 kg | Viaja en hora pico. **Pico y placa** está vigente de 5 a.m. a 8 p.m.; los vehículos con placa terminada en 5‑8 (lunes), 1‑4 (martes), 
+
+**9. Quiero contaminar lo menos posible: ¿cómo voy de Bello a Envigado a las 10 a. m.?**
+
+> **Opción con menor emisión de CO₂ (0 kg):**    | Modo | Tiempo estimado | Costo | Emisiones | |------|----------------|-------|-----------| | **Bicicleta** | ≈ 90 min | 0 COP | 0 kg | | **Caminata** | ≈ 273 min | 0 COP | 0 kg | | **Transporte público** | ≈ 273 min (solo caminata) | 0 COP | 0 kg |  El modo que combina **cero emisiones** y **tiempo razonable** es la **bicicleta** (≈ 1 h 30 min). Si 
+
+**10. Mi placa termina en 6 y es jueves. ¿Puedo ir en carro de Acevedo a Poblado a las 7 a. m.? Si no, ¿qué alternativa me conviene?**
+
+> No. En jueves los vehículos con placa 6 están restringidos de 5 a.m. a 8 p.m. [01_pico_y_placa_medellin_2026-2.md](https://www.medellin.gov.co/es/sala-de-prensa/noticias/la-nueva-rotacion-del-pico-y-placa-en-medellin-comenzara-a-regir-a-partir-del-lunes-3-de-agosto/).  **Alternativas recomendadas (de acuerdo con el planificador A\*)**  | Modo | Tiempo | Costo (COP) | Emisiones (kg CO₂e) | |------|
+
+**11. ¿Cuánto me cuesta ir de Estadio a Itagüí en Metro y cuánto en carro a las 5 p. m.? ¿Cuál es la tarifa oficial del pasaje?**
+
+> No pude contactar al modelo de lenguaje (RateLimitError). Intente de nuevo en unos segundos; el mapa y la tabla siguen funcionando.
+
+**12. Voy de San Javier a Oriente con mi bicicleta de marco rígido, ¿puedo hacer todo el trayecto en Metro y Tranvía con ella? ¿Cuál es la ruta?**
+
+> **¿Puedes hacer todo el trayecto con la bicicleta de marco rígido?**   No. Las bicicletas de marco rígido **no pueden ingresar a la línea de Tranvía (T)**; solo se permite el ingreso de bicicletas plegables en ese medio. Por lo tanto, el tramo San Antonio → Oriente en tranvía no está disponible para tu bicicleta.  **Ruta posible con la bicicleta y el Metro**  | tramo | Medio | Tiempo aproximado | 
+
+**13. ¿Cómo llego de Narnia a Poblado en Metro?**
+
+> No reconozco **Narnia** como una estación del Metro de Medellín. Por favor indícame una estación válida (por ejemplo: **Acevedo, Aguacatala, Alpujarra, San Antonio, etc.**) para poder calcular la ruta.    Si necesitas la lista completa de estaciones, avísame y te la comparto.  _Aviso: estimaciones orientativas con datos abiertos y supuestos; no es asesoría legal, de seguridad ni de movilidad ofici

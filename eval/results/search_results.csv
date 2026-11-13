@@ -1,0 +1,121 @@
+perfil,par,algoritmo,nodos_expandidos,tiempo_ms,costo_generalizado,aristas_en_ruta,optimo_segun_networkx
+carro,Niquía -> La Estrella,A*,10757,52.5,32.38,92,True
+carro,Niquía -> La Estrella,Dijkstra,34390,94.8,32.38,92,True
+carro,Niquía -> La Estrella,BFS,27219,33.1,34.166,84,False
+carro,Acevedo -> Poblado,A*,1399,5.8,16.644,78,True
+carro,Acevedo -> Poblado,Dijkstra,15289,42.6,16.644,78,True
+carro,Acevedo -> Poblado,BFS,8488,8.9,18.445,63,False
+carro,San Javier -> Oriente,A*,10199,46.2,20.233,131,True
+carro,San Javier -> Oriente,Dijkstra,22460,65.9,20.233,131,True
+carro,San Javier -> Oriente,BFS,31425,38.1,22.872,112,False
+carro,Bello -> Envigado,A*,1694,7.3,26.711,98,True
+carro,Bello -> Envigado,Dijkstra,25028,70.4,26.711,98,True
+carro,Bello -> Envigado,BFS,9674,11.1,28.112,69,False
+carro,Estadio -> Itagüí,A*,6088,27.5,18.28,61,True
+carro,Estadio -> Itagüí,Dijkstra,26856,82.1,18.28,61,True
+carro,Estadio -> Itagüí,BFS,10788,12.5,19.618,51,False
+carro,Santo Domingo -> Aguacatala,A*,6874,104.7,24.949,113,True
+carro,Santo Domingo -> Aguacatala,Dijkstra,22040,61.1,24.949,113,True
+carro,Santo Domingo -> Aguacatala,BFS,15865,17.6,28.708,89,False
+carro,Floresta -> Ayurá,A*,8615,40.2,16.822,89,True
+carro,Floresta -> Ayurá,Dijkstra,22592,64.7,16.822,89,True
+carro,Floresta -> Ayurá,BFS,15227,18.1,19.646,62,False
+carro,Alpujarra -> Caribe,A*,3282,14.2,9.681,70,True
+carro,Alpujarra -> Caribe,Dijkstra,11180,31.5,9.681,70,True
+carro,Alpujarra -> Caribe,BFS,9486,11.2,12.37,44,False
+carro,La Aurora -> Sabaneta,A*,15833,72.1,32.464,130,True
+carro,La Aurora -> Sabaneta,Dijkstra,34281,99.7,32.464,130,True
+carro,La Aurora -> Sabaneta,BFS,26323,32.3,36.417,99,False
+carro,Industriales -> Madera,A*,4767,20.2,16.342,87,True
+carro,Industriales -> Madera,Dijkstra,26210,76.1,16.342,87,True
+carro,Industriales -> Madera,BFS,12094,15.7,16.61,42,False
+carro,aleatorio_1,A*,569,2.1,12.335,40,True
+carro,aleatorio_1,Dijkstra,1128,2.0,12.335,40,True
+carro,aleatorio_1,BFS,1846,1.3,15.465,35,False
+carro,aleatorio_2,A*,11490,52.2,20.381,130,True
+carro,aleatorio_2,Dijkstra,23908,67.2,20.381,130,True
+carro,aleatorio_2,BFS,30002,47.1,23.763,98,False
+carro,aleatorio_3,A*,7780,41.7,24.038,112,True
+carro,aleatorio_3,Dijkstra,18025,55.9,24.038,112,True
+carro,aleatorio_3,BFS,9172,12.6,27.74,79,False
+carro,aleatorio_4,A*,9184,45.7,19.702,111,True
+carro,aleatorio_4,Dijkstra,19595,57.4,19.702,111,True
+carro,aleatorio_4,BFS,21060,29.9,29.207,98,False
+carro,aleatorio_5,A*,7330,37.0,16.228,120,True
+carro,aleatorio_5,Dijkstra,20990,63.5,16.228,120,True
+carro,aleatorio_5,BFS,16979,23.8,20.269,78,False
+carro,aleatorio_6,A*,357,1.6,2.972,29,True
+carro,aleatorio_6,Dijkstra,790,1.7,2.972,29,True
+carro,aleatorio_6,BFS,994,0.7,3.019,27,False
+carro,aleatorio_7,A*,1415,7.0,9.583,51,True
+carro,aleatorio_7,Dijkstra,9160,29.8,9.583,51,True
+carro,aleatorio_7,BFS,9978,18.6,9.609,40,False
+carro,aleatorio_8,A*,2978,15.6,11.285,85,True
+carro,aleatorio_8,Dijkstra,8449,23.4,11.285,85,True
+carro,aleatorio_8,BFS,19672,25.9,12.297,79,False
+carro,aleatorio_9,A*,1659,8.0,10.511,75,True
+carro,aleatorio_9,Dijkstra,9090,26.6,10.511,75,True
+carro,aleatorio_9,BFS,5975,8.4,13.595,47,False
+carro,aleatorio_10,A*,7631,37.3,35.168,178,True
+carro,aleatorio_10,Dijkstra,19967,54.0,35.168,178,True
+carro,aleatorio_10,BFS,19259,23.4,38.979,123,False
+transporte,Niquía -> La Estrella,A*,278,1.6,17.38,22,True
+transporte,Niquía -> La Estrella,Dijkstra,14935,47.2,17.38,22,True
+transporte,Niquía -> La Estrella,BFS,6556,8.8,17.38,22,True
+transporte,Acevedo -> Poblado,A*,185,0.9,9.12,13,True
+transporte,Acevedo -> Poblado,Dijkstra,3891,12.2,9.12,13,True
+transporte,Acevedo -> Poblado,BFS,1561,1.9,9.12,13,True
+transporte,San Javier -> Oriente,A*,4590,24.4,13.031,18,True
+transporte,San Javier -> Oriente,Dijkstra,8469,26.0,13.031,18,True
+transporte,San Javier -> Oriente,BFS,3355,5.1,14.244,17,False
+transporte,Bello -> Envigado,A*,100,1.0,13.926,18,True
+transporte,Bello -> Envigado,Dijkstra,9595,31.6,13.926,18,True
+transporte,Bello -> Envigado,BFS,3581,5.5,13.926,18,True
+transporte,Estadio -> Itagüí,A*,1434,8.1,11.825,14,True
+transporte,Estadio -> Itagüí,Dijkstra,8869,27.9,11.825,14,True
+transporte,Estadio -> Itagüí,BFS,2718,3.5,11.825,14,True
+transporte,Santo Domingo -> Aguacatala,A*,831,3.8,14.118,18,True
+transporte,Santo Domingo -> Aguacatala,Dijkstra,6376,19.3,14.118,18,True
+transporte,Santo Domingo -> Aguacatala,BFS,2680,3.5,14.118,18,True
+transporte,Floresta -> Ayurá,A*,1266,6.3,10.054,13,True
+transporte,Floresta -> Ayurá,Dijkstra,5888,16.2,10.054,13,True
+transporte,Floresta -> Ayurá,BFS,1963,2.6,10.054,13,True
+transporte,Alpujarra -> Caribe,A*,198,0.9,4.845,8,True
+transporte,Alpujarra -> Caribe,Dijkstra,933,2.1,4.845,8,True
+transporte,Alpujarra -> Caribe,BFS,455,0.3,4.845,8,True
+transporte,La Aurora -> Sabaneta,A*,2665,13.0,19.281,22,True
+transporte,La Aurora -> Sabaneta,Dijkstra,11790,33.4,19.281,22,True
+transporte,La Aurora -> Sabaneta,BFS,4381,5.6,19.281,22,True
+transporte,Industriales -> Madera,A*,196,1.3,8.741,13,True
+transporte,Industriales -> Madera,Dijkstra,5201,15.3,8.741,13,True
+transporte,Industriales -> Madera,BFS,3173,4.4,8.741,13,True
+transporte,aleatorio_1,A*,587,2.2,16.036,35,True
+transporte,aleatorio_1,Dijkstra,773,1.2,16.036,35,True
+transporte,aleatorio_1,BFS,1709,1.3,16.643,31,False
+transporte,aleatorio_2,A*,11610,59.6,22.439,69,True
+transporte,aleatorio_2,Dijkstra,19358,76.1,22.439,69,True
+transporte,aleatorio_2,BFS,21053,32.5,27.006,52,False
+transporte,aleatorio_3,A*,12047,69.0,27.408,76,True
+transporte,aleatorio_3,Dijkstra,18638,66.4,27.408,76,True
+transporte,aleatorio_3,BFS,20436,30.5,42.399,67,False
+transporte,aleatorio_4,A*,10029,49.2,19.992,49,True
+transporte,aleatorio_4,Dijkstra,17252,53.8,19.992,49,True
+transporte,aleatorio_4,BFS,21656,33.4,20.764,45,False
+transporte,aleatorio_5,A*,13973,85.7,24.304,64,True
+transporte,aleatorio_5,Dijkstra,23592,92.6,24.304,64,True
+transporte,aleatorio_5,BFS,22517,42.0,27.34,47,False
+transporte,aleatorio_6,A*,179,1.0,2.639,12,True
+transporte,aleatorio_6,Dijkstra,229,0.5,2.639,12,True
+transporte,aleatorio_6,BFS,321,0.3,2.639,12,True
+transporte,aleatorio_7,A*,731,3.7,9.089,18,True
+transporte,aleatorio_7,Dijkstra,2252,6.9,9.089,18,True
+transporte,aleatorio_7,BFS,2497,3.2,18.125,14,False
+transporte,aleatorio_8,A*,7130,36.4,20.561,53,True
+transporte,aleatorio_8,Dijkstra,11019,36.0,20.561,53,True
+transporte,aleatorio_8,BFS,11376,19.5,31.498,52,False
+transporte,aleatorio_9,A*,3711,20.9,14.78,64,True
+transporte,aleatorio_9,Dijkstra,6028,23.5,14.78,64,True
+transporte,aleatorio_9,BFS,6841,12.5,31.015,37,False
+transporte,aleatorio_10,A*,16271,96.5,57.424,75,True
+transporte,aleatorio_10,Dijkstra,23343,81.7,57.424,75,True
+transporte,aleatorio_10,BFS,19073,36.9,57.471,73,False

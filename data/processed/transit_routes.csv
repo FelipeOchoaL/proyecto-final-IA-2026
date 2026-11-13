@@ -1,0 +1,39 @@
+route_id,mode,ref,name,from,to,network,operator,colour
+1502460,metro,A,Metro Línea A: Dirección Niquía,La Estrella,Niquía,Metro de Medellín,ETMVA,
+1502510,metro,A,Metro Línea A: Dirección La Estrella,Niquía,La Estrella,Metro de Medellín,ETMVA,
+1504096,metro,B,Metro Línea B: Dirección San Javier,San Antonio,San Javier,Metro de Medellín,Empresa de Transporte Masivo del Valle de Aburrá,
+1504257,metro,B,Metro Línea B: Dirección San Antonio,San Javier,San Antonio,Metro de Medellín,Empresa de Transporte Masivo del Valle de Aburrá,
+1506181,metrocable,J,Metrocable Línea J: Dirección La Aurora,San Javier,La Aurora,Metrocable,ETMVA,
+1506274,metrocable,J,Metrocable Línea J: Dirección San Javier,La Aurora,San Javier,Metrocable,ETMVA,
+1516642,metrocable,K,Metrocable Línea K: Dirección Santo Domingo,Acevedo,Santo Domingo,Metrocable,ETMVA,
+1516660,metrocable,K,Metrocable Línea K: Dirección Acevedo,Santo Domingo,Acevedo,Metrocable,ETMVA,
+1520815,metrocable,L,Metrocable Línea L: Dirección Arví,Santo Domingo,Arví,Metrocable,ETMVA,
+1520816,metrocable,L,Metrocable Línea L: Dirección Santo Domingo,Arví,Santo Domingo,Metrocable,ETMVA,
+1837838,bus,,,,,,,
+5393696,metroplus,1,Metroplus Línea 1: Parque Aranjuez → U. de M.,Parque Aranjuez,U. de M.,Metroplus,Metro de Medellín,#0E6F76
+5401998,metroplus,2,Metroplus Línea 2: Parque Aranjuez → U. de M.,Parque Aranjuez,U. de M.,Metroplus,Metro de Medellín,#65A9AC
+5401999,metroplus,2,Metroplus Línea 2: U. de M. → Parque Aranjuez,U. de M.,Parque Aranjuez,Metroplus,Metro de Medellín,#65A9AC
+5435019,bus,133-I,Bus Integrado 133-I: San Lucas- Estación Poblado,San Lucas,Estación Poblado,,,
+5435020,bus,133-II Alterno,Bus Integrado 133-II Recorrido Alterno: Estación Aguacatala → San Lucas,Estación Aguacatala,San Lucas,,Autobuses El Poblado,
+5435021,bus,133-II Alterno,Bus Integrado 133-II Recorrido Alterno: San Lucas → Estación Aguacatala,San Lucas,Estación Aguacatala,,Autobuses El Poblado,
+5435022,bus,133-II,Bus Integrado 133-II: Estación Aguacatala → San Lucas,Estación Aguacatala,San Lucas,,Autobuses El Poblado,
+5435023,bus,133-II,Bus Integrado 133-II: San Lucas → Estación Aguacatala,San Lucas,Estación Aguacatala,,Autobuses El Poblado,
+5435024,bus,134-I,Bus Integrado 134-I: Loma El Tesoro - Estación Poblado,Loma El Tesoro,Estación Poblado,,,
+5435026,bus,136-I,Bus Integrado 136-I: Las Palmas - Castropol - Estación Industriales,Las Palmas,Estación Industriales,,,
+5441815,bus,C3-002,Ruta C3-002: Estación Aguacatala - Bulerías,Estación Aguacatala,Bulerías,SIT,,
+5441959,bus,135-I,Bus Integrado 135-I: La Frontera - Estación Aguacatala,La Frontera,Estación Aguacatala,,,
+5445128,bus,132-I Alterno,Bus Integrado 132-I Recorrido Alterno: Poblado - Estación Aguacatala,,,,Autobuses El Poblado,
+5445129,bus,132-I,Bus Integrado 132-I: Poblado - Estación Aguacatala,,,,Autobuses El Poblado,
+5458501,metroplus,1,Metroplus Línea 1: U. de M. → Parque Aranjuez,U. de M.,Parque Aranjuez,Metroplus,Metroplús S. A.,#18A096
+6479660,bus,C3-007,Ruta C3-007 - La Palma - Loma de los Bernal,Loma Los Bernal,La Palma,SIT,,
+6491411,tranvia,T-A,Línea T-A: Oriente → San Antonio,Oriente,San Antonio,Metro de Medellín,,#009933
+6491412,tranvia,T-A,Línea T-A: San Antonio → Oriente,San Antonio,Oriente,Metro de Medellín,,#009933
+6659875,bus,C3-006,Ruta C3-006 - Las Violetas - Universidad de Medellín - Villa Café,Violeta,Villa Café,SIT,Masivo de Occidente,
+6659991,bus,C3-001,Ruta C3-001: Santa Gema -> La Mota -> Aguacatala,Santa Gema,Aguacatala,SIT,Masivo de Occidente,
+7520265,metrocable,H,Metrocable Línea H: Villa Sierra -> Oriente,Villa Sierra,Oriente,Metrocable,ETMVA,
+7520266,metrocable,H,Metrocable Línea H: Oriente -> Villa Sierra,Oriente,Villa Sierra,Metrocable,ETMVA,
+7520370,metrocable,M,Metrocable Línea M: Trece de Noviembre -> Miraflores,Trece de Noviembre,Miraflores,Metrocable,ETMVA,
+7520371,metrocable,M,Metrocable Línea M: Miraflores -> Trece de Noviembre,Miraflores,Trece de Noviembre,Metrocable,ETMVA,
+7520917,bus,C3-001,Ruta C3-001: Aguacatala -> La Mota -> Santa Gema,Aguacatala,Santa Gema,SIT,Masivo de Occidente,
+19703369,metrocable,P,Metrocable Línea P: Dirección Acevedo,El Progreso,Acevedo,Metrocable,ETMVA,red
+19703370,metrocable,P,Metrocable Línea P: Dirección El Progeso,Acevedo,El Progreso,Metrocable,ETMVA,red

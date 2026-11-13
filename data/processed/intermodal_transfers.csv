@@ -1,0 +1,5 @@
+estacion,modo_a,lineas_a,modo_b,lineas_b,distancia_m
+Acevedo,metro,A,metrocable,K,49
+Oriente,metrocable,H,tranvia,T-A,40
+San Antonio,metro,A|B,tranvia,T-A,66
+San Javier,metro,B,metrocable,J,72
